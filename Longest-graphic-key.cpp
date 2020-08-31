@@ -7,8 +7,6 @@ int main(){
 	vector<int> perm(9);
 	generate(perm.begin(), perm.end(), [] {static int i = 8; return i--; });
 	auto max_perm = make_pair(perm, DBL_MIN);
-	for_each(perm.begin(), perm.end(), [](int value) { cout << value << ' '; });
-	cout.put('\n');
 	for (double lenght(0.); prev_permutation(perm.begin(), perm.end()); lenght = 0.) {
 		vector<bool> visited(9, false);
 		adjacent_find(perm.begin(), perm.end(),
