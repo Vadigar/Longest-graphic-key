@@ -11,4 +11,5 @@ Let's number all the vertices from 0 to 8, then the key will be determined by th
   0   1   2
 
 X coordinate = vertex number % 3
+
 Y coordinate = vertex number / 3
